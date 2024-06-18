@@ -10,7 +10,7 @@ Zadanie rekrutacyjne :)
 ## Instalacja Projektu
 
 ```
-https://github.com/JakubPaszke/luna.git
+git clone https://github.com/JakubPaszke/luna.git
 cd luna
 ```
 
@@ -21,6 +21,8 @@ Jak w większości przypadków, uruchamiamy
 docker-compose build 
 docker-compose up
 ```
+
+Jeśli zwracany jest error, że wait-for-it.sh nie jest znaleziony, należy zmienić kodowanie tego pliku z CRLF na LF.
 
 Nie ma potrzeby migrowania danych, bo docker-compose robi to za nas (a baza danych nie rozwala się, dzięki plikowi wait-for-it.sh).
 
