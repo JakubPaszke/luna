@@ -11,6 +11,7 @@ class System(models.Model):
     status = models.CharField(max_length=100, default='active')
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     is_deleted = models.BooleanField(default=False)
+    created_time = models.DateTimeField(auto_now_add=True)
 
     objects = ActiveObjects() 
     all_objects = models.Manager()  
